@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clientes</title>
+  <link rel="stylesheet" href="/css/stylesClientes.css"> <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Clientes</h1>
+    <form id="clientForm" class="mt-4">
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="telefono">Teléfono:</label>
+          <input type="text" id="telefono" class="form-control" placeholder="Teléfono">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" class="form-control" placeholder="Dirección">
+        </div>
+        <div class="form-group col-md-1">
+          <button type="submit" class="btn btn-primary" id="submitButton">Guardar</button>
+          <button type="button" class="btn btn-warning" id="UpdateButton">Modificar</button>
+          <button type="button" class="btn btn-warning" id="removeButton">Remover</button>
+        </div>
+      </div>
+    </form>
+    <table class="table table-striped mt-4">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Teléfono</th>
+          <th>Dirección</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="clientTable">
+        </tbody>
+    </table>
+  </div>
+  <script src="/js/controlerClientes.js"></script>
+</body>
+</html>

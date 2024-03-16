@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/script_logon.js"></script>
+  <link rel="stylesheet" href="/css/stylesLogin.css">
+   
+  <title>Formulario de Inicio de Sesión</title>
+</head>
+
+  <div class="container-login">
+    <div id="h2">
+      <h2>LOGIN</h2>
+    </div>
+    <form id="form_logon" class="form">
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <button type="button" onclick="enviarDatos()">Iniciar sesión</button>
+    </form>
+    <br>
+
+    <!-- Botón para abrir el modal de registro (oculto visualmente) -->
+    <button id="registroButton" style="display: none;" onclick="abrirModal()">Registrarse</button>
+    
+    <!-- Enlace para abrir el modal de registro -->
+    <a href="#" onclick="abrirModalDesdeEnlace()">Registrarse</a>
+  </div>
+
+    <!-- Modal para el registro -->
+  <div class="container-modal">
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h2>Registro</h2>
+      <!-- Agrega tus campos de registro aquí -->
+      <label for="name">Nombre:</label>
+      <input type="text" id="namer" name="name" required>
+      <br>
+      <label for="username">Usuario:</label>
+      <input type="email" id="usernamer" name="username"  required>
+      <br>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="passwordr" name="password" required>
+      <br>
+      <div id="mensajeRegistro"></div>
+      <button type="button" onclick="enviarRegistro()">Registrar</button>
+    </div>
+  </div>
+  </div>
+  <!-- Tu script principal -->
+  <script src="/js/modal_registro.js"></script>"></script>
+
+</body>
+</html>

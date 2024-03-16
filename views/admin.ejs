@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <!-- Enlaces a archivos CSS -->
+    <link rel="stylesheet" href="/public/css/stylesAdmin.css">
+</head>
+<body>
+
+    <header>
+        <!-- Barra de navegación o título del panel -->
+        <h1>Panel de Administrador</h1>
+    </header>
+
+    <nav>
+        <!-- Barra de navegación con enlaces a diferentes secciones o
+            funciones del administrador -->
+        <ul>
+            <li><a href="/admin/pqrs">Gestión de PQRS</a></li>
+            <li><a href="/admin/sanciones">Gestión de Sanciones</a></li>
+            <li><a href="/admin/documentos">Gestión de Documentos</a></li>
+            <li><a href="/admin/usuarios">Gestión de Usuarios</a></li>
+            <li><a href="/admin/informes">Gestión de Informes</a></li>
+            <li><a href="/admin/encuestas">Gestión de Encuestas</a></li>
+            <li><a href="/admin/calendario">Calendario</a></li>
+            <li><a href="/admin/cartelera">Cartelera</a></li>
+            <li><a href="/admin/proveedores">Gestión de Proveedores</a></li>
+            <!-- Otros enlaces o secciones del panel de administrador -->
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Contenido principal, donde se mostrarán las funciones o información
+            relacionada con cada sección -->
+        <h2>Panel de Administrador</h2>
+        <div id="content">
+            <!-- Aquí se renderizarán los elementos específicos de cada función,
+                utilizando EJS -->
+            <!-- Por ejemplo, formulario para registrar una nueva PQRS,
+                lista de PQRS, tabla de sanciones, etc. -->
+            <!-- Se insertarán los datos dinámicos utilizando la sintaxis de EJS -->
+            <%= contenidoEspecifico %>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Pie de página con información adicional o enlaces de interés -->
+        <p>© 2024 Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlaces a archivos JavaScript -->
+    <!--<script src="/js/script.js"></script>-->
+
+</body>
+</html>
