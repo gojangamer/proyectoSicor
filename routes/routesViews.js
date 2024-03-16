@@ -22,4 +22,8 @@ router.get('admin', (req, res) => {
     res.render('admin');
 });
 
+router.get('residen', (req, res) => {
+    res.render('residen');
+});
+
 module.exports = router;

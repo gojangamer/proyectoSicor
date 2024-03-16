@@ -151,8 +151,8 @@ router.post("/login", async (req, res) => {
     let redirectTo = "/";
     if (user.profile === "admin") {
       redirectTo = "/admin";
-    } else if (user.profile === "cajero") {
-      redirectTo = "/cajero";
+    } else if (user.profile === "Residente") {
+      redirectTo = "/resid";
     } else {
       redirectTo = "/normal";
     }

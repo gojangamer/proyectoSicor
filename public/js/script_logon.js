@@ -20,7 +20,7 @@ const enviarDatos = async () => {
       if (profile === "admin") {
         window.location.href = "admin";
       } else if (profile === "residente") {
-        window.location.href = "/colombia";
+        window.location.href = "/residen";
       } else {
         window.location.href = "/normal";
       }
