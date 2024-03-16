@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+/*const mongoose = require('mongoose');
 
 // Define el esquema del modelo Cliente
 const clienteSchema = new mongoose.Schema({
@@ -72,3 +72,4 @@ const facturaSchema = new mongoose.Schema({
 const Factura = mongoose.model('Factura', facturaSchema);
 // exportamos los modelos
 module.exports = { Cliente, Producto, Factura };
+*/
